@@ -17,17 +17,17 @@ loan_costs = [500, 600, 200, 1000, 450]
 # # How many loans are in the list?
 # # @TODO: Use the `len` function to calculate the total number of loans in the list.
 # # Print the number of loans from the list
-print("Number of loans in the list is: $", len(loan_costs))
+print("Number of loans in the list is:", len(loan_costs))
 # What is the total of all loans?
 # @TODO: Use the `sum` function to calculate the total of all loans in the list.
 # Print the total value of the loans
-print("Sum of the loan costs is: $", sum(loan_costs))
+print("Sum of all loans in the list is: $", sum(loan_costs))
 
 # What is the average loan amount from the list?
 # @TODO: Using the sum of all loans and the total number of loans, calculate the average loan price.
 # Print the average loan amount
 average_loan_amount = (sum(loan_costs)/len(loan_costs))
-print("Average loan amount is: $", average_loan_amount)
+print("Average loan price is: $", average_loan_amount)
 
 """Part 2: Analyze Loan Data.
 
@@ -67,6 +67,8 @@ loan_data = {
 # Print each variable.
 future_value = loan_data.get("future_value")
 remaining_months = loan_data.get("remaining_months")
+print("Future value is: $", future_value)
+print("Remaining months are:", remaining_months)
 
 
 # @TODO: Use the formula for Present Value to calculate a "fair value" of the loan.
@@ -74,6 +76,7 @@ remaining_months = loan_data.get("remaining_months")
 #   You'll want to use the **monthly** version of the present value formula.
 #   HINT: Present Value = Future Value / (1 + Discount_Rate/12) ** remaining_months
 present_value = future_value / (1 + .20 / 12) **9
+print(f"Present value is: $", f"{present_value:.2f}")
 
 
 # If Present Value represents what the loan is really worth, does it make sense to buy the loan at its cost?
