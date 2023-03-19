@@ -26,7 +26,7 @@ print(sum(loan_costs))
 # What is the average loan amount from the list?
 # @TODO: Using the sum of all loans and the total number of loans, calculate the average loan price.
 # Print the average loan amount
-# YOUR CODE HERE!
+print(sum(loan_costs)/len(loan_costs))
 
 """Part 2: Analyze Loan Data.
 
