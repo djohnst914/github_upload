@@ -73,7 +73,7 @@ print(remaining_months)
 # Use a minimum required return of 20% as the discount rate.
 #   You'll want to use the **monthly** version of the present value formula.
 #   HINT: Present Value = Future Value / (1 + Discount_Rate/12) ** remaining_months
-
+present_value = future_value / (1 + .20 / 12) **9
 
 
 # If Present Value represents what the loan is really worth, does it make sense to buy the loan at its cost?
